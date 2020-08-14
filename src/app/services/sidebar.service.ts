@@ -10,8 +10,10 @@ export class SidebarService {
 			icono: 'mdi mdi-gauge',
 			submenu: [
 				{ titulo: 'Main', url: '/' },
-				{ titulo: 'Progressbar', url: '/dashboard/progress' },
-				{ titulo: 'Graficas', url: '/dashboard/grafica1' }
+				{ titulo: 'Promesas', url: '/dashboard/promesas' },
+				{ titulo: 'RxJs', url: '/dashboard/rxjs' },
+				{ titulo: 'Graficas', url: '/dashboard/grafica1' },
+				{ titulo: 'Progressbar', url: '/dashboard/progress' }
 			]
 		}
 	];
