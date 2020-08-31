@@ -7,10 +7,11 @@ import { ChartsModule } from 'ng2-charts';
 import { IncrementadorComponent } from './incrementador/incrementador.component';
 import { DonaComponent } from './dona/dona.component';
 import { PromesasComponent } from './promesas/promesas.component';
+import { ModalImagenComponent } from './modal-imagen/modal-imagen.component';
 
 @NgModule({
-	declarations: [ IncrementadorComponent, DonaComponent, PromesasComponent ],
-	exports: [ IncrementadorComponent, DonaComponent ],
+	declarations: [ IncrementadorComponent, DonaComponent, PromesasComponent, ModalImagenComponent ],
+	exports: [ IncrementadorComponent, DonaComponent, ModalImagenComponent ],
 	imports: [ CommonModule, FormsModule, ChartsModule ]
 })
 export class ComponentsModule {}
