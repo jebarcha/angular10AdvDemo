@@ -15,6 +15,10 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { UsuariosComponent } from './mantenimientos/usuarios/usuarios.component';
+import { HospitalesComponent } from './mantenimientos/hospitales/hospitales.component';
+import { MedicosComponent } from './mantenimientos/medicos/medicos.component';
+import { PipesModule } from '../pipes/pipes.module';
+import { MedicoComponent } from './mantenimientos/medicos/medico.component';
 
 @NgModule({
 	declarations: [
@@ -25,9 +29,20 @@ import { UsuariosComponent } from './mantenimientos/usuarios/usuarios.component'
 		AccountSettingsComponent,
 		RxjsComponent,
 		PerfilComponent,
-		UsuariosComponent
+		UsuariosComponent,
+		HospitalesComponent,
+		MedicosComponent,
+		MedicoComponent
 	],
-	imports: [ CommonModule, FormsModule, ReactiveFormsModule, SharedModule, RouterModule, ComponentsModule ],
+	imports: [
+		CommonModule,
+		FormsModule,
+		ReactiveFormsModule,
+		SharedModule,
+		RouterModule,
+		ComponentsModule,
+		PipesModule
+	],
 	exports: [ DashboardComponent, ProgressComponent, Grafica1Component, PagesComponent ]
 })
 export class PagesModule {}
